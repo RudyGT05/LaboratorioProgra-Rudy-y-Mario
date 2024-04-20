@@ -11,7 +11,7 @@ namespace LaboratorioProgra1.tiposdejuegos
     {
         public int Mundon { get; set; }
         public int jugadorn { get; set; }
-
+         
         public void CrearMundo()
         {
             
