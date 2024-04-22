@@ -36,7 +36,17 @@ namespace LaboratorioProgra1.tiposdejuegos
             Console.WriteLine(ave.Seleccionardifucultad());
             Console.WriteLine("Ingresa el numero para elegir el arma a equipar: \n1.Arco  \n2.Piolet  \n3.Machete");
             Console.WriteLine(ave.elegirarma());
-
+            Console.WriteLine("");
+            Deportes dep = new Deportes();
+            dep.Titulo = "EAFC 2024";
+            dep.Desarrolladora = "EA SPORTS";
+            dep.Calificacion = 9;
+            dep.AnioLanzamiento = 2023;
+            dep.Deporte = "Futbol";
+            dep.LicenciasOficiales = "La liga";
+            Console.WriteLine($"{dep.MostrarDetallesDeporte()}");
+            Console.WriteLine(dep.inipartido());
+            Console.WriteLine(dep.falta());
 
             Console.ReadLine();
         }

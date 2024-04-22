@@ -21,7 +21,6 @@ namespace LaboratorioProgra1.tiposdejuegos
         public string Seleccionardifucultad()
         {
 
-            bool otra = false;
             int opc = int.Parse(Console.ReadLine());
 
             switch (opc)
@@ -29,25 +28,25 @@ namespace LaboratorioProgra1.tiposdejuegos
                 case 1:
                     {
                         return "Haz elegido la dificultad Facil.";
-                        otra = true;
+                      
                         break;
                     }
                 case 2:
                     {
                         return " Haz elegido la dificultad Media";
-                        otra = false;
+                        
                         break;
                     }
                 case 3:
                     {
                         return "Haz elegido la dificultad Dificil";
-                        otra = true;
+                       
                         break;
                     }
                 default:
                     {
                         return "Opcion no valida";
-                        otra = false;
+                       
                         break;
                     }
 
