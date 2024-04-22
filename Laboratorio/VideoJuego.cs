@@ -47,12 +47,11 @@ namespace LaboratorioProgra1.Laboratorio
             }
         }
 
-        public void MostrarInformacion()
+        public string MostrarInformacion()
         {
-            Console.WriteLine("Título: " + Titulo);
-            Console.WriteLine("Desarrolladora: " + Desarrolladora);
-            Console.WriteLine("Calificación: " + Calificacion);
-            Console.WriteLine("Año de Lanzamiento: " + AnioLanzamiento);
+            return "Título: " + Titulo + " \nDesarrolladora: " + desarrolladora + " \nCalificación: " + Calificacion + " \nAño de Lanzamiento: " + AnioLanzamiento;
+
+
         }
 
         public static void saludo()
@@ -78,7 +77,7 @@ namespace LaboratorioProgra1.Laboratorio
             // Error lógico
             if (jugando)
             {
-                
+
                 Console.WriteLine("Juego terminado.");
             }
             else
@@ -89,3 +88,4 @@ namespace LaboratorioProgra1.Laboratorio
 
     }
 }
+

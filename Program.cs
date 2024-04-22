@@ -3,6 +3,46 @@ using LaboratorioProgra1.EjemploPolimorfismo.Heredados;
 using LaboratorioProgra1.Laboratorio;
 using LaboratorioProgra1.tiposdejuegos;
 
+using LaboratorioProgra1.Laboratorio;
+using System;
+
+namespace LaboratorioProgra1.tiposdejuegos
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Shooter shoote = new Shooter();
+            shoote.Titulo = "Valorant";
+            shoote.Desarrolladora = "Riot Games";
+            shoote.Calificacion = 8;
+            shoote.AnioLanzamiento = 2020;
+            shoote.realista = true;
+            shoote.ModoDeJuego = "5v5";
+            Console.WriteLine($"{shoote.MostrarDetallesShooter()}");
+            Console.WriteLine(shoote.ElegirMapa());
+            Console.WriteLine(shoote.comprararma());
+            Console.WriteLine("");
+            Aventura ave = new Aventura();
+            ave.Titulo = "Shadows of the Tomb Raider";
+            ave.Desarrolladora = "Eidos Montreal";
+            ave.Calificacion = 9;
+            ave.AnioLanzamiento = 2018;
+            ave.personajepricipal = "Lara Croft";
+            ave.Duracion = "De 15 a 24 horas";
+            Console.WriteLine($"{ave.MostrarDetallesAventura()}");
+            Console.WriteLine("Ingresa el numero para elegir la dificultad: \n1.Facil  \n2.Media  \n3.Dificil");
+            Console.WriteLine(ave.Seleccionardifucultad());
+            Console.WriteLine("Ingresa el numero para elegir el arma a equipar: \n1.Arco  \n2.Piolet  \n3.Machete");
+            Console.WriteLine(ave.elegirarma());
+
+
+            Console.ReadLine();
+        }
+    }
+}
+
 //static void EjemploPolimorfismo()
 //{
 //    Animal[] animales = new Animal[3];
@@ -15,31 +55,30 @@ using LaboratorioProgra1.tiposdejuegos;
 //    }
 //}   
 
-static void Laboratorio()
-{
-    VideoJuego videoJuego = new VideoJuego();
-    videoJuego.Titulo = "The Legend of Zelda: Breath of the Wild";
-    videoJuego.Desarrolladora = "Nintendo";
-    videoJuego.Calificacion = 8;
-    videoJuego.AnioLanzamiento = 2017;
-    videoJuego.MostrarInformacion();
-}
+//static void Laboratorio()
+//{
+//    VideoJuego videoJuego = new VideoJuego();
+//    videoJuego.Titulo = "The Legend of Zelda: Breath of the Wild";
+//    videoJuego.Desarrolladora = "Nintendo";
+//    videoJuego.Calificacion = 8;
+//    videoJuego.AnioLanzamiento = 2017;
+//    videoJuego.MostrarInformacion();
+//}
 
-Valorant valo = new Valorant();
-valo.Titulo = "Valorant";
-valo.Desarrolladora = "Riot Games";
-valo.Calificacion = 8;
-valo.AnioLanzamiento = 2020;
-valo.MostrarInformacion();
-valo.ElegirMapa();
-valo.comprararma();
+//Shooter shoote = new Shooter();
+//shoote.Titulo = "Valorant";
+//shoote.Desarrolladora = "Riot Games";
+//shoote.Calificacion = 8;
+//shoote.AnioLanzamiento = 2020;
+//shoote.MostrarDetallesShooter();
+//shoote.ElegirMapa();
+//shoote.comprararma();
 
 
 
-Console.ReadLine();
+//Console.ReadLine();
 
-//Laboratorio();+
-// VideoJuego.listaDeJuegos();
-
+////Laboratorio();+
+//// VideoJuego.listaDeJuegos();
 
 
