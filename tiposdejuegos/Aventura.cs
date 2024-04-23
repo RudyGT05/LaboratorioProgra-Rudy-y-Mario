@@ -10,6 +10,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LaboratorioProgra1.Laboratorio;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace LaboratorioProgra1.tiposdejuegos
 {
@@ -28,25 +34,25 @@ namespace LaboratorioProgra1.tiposdejuegos
                 case 1:
                     {
                         return "Haz elegido la dificultad Facil.";
-                      
+
                         break;
                     }
                 case 2:
                     {
                         return " Haz elegido la dificultad Media";
-                        
+
                         break;
                     }
                 case 3:
                     {
                         return "Haz elegido la dificultad Dificil";
-                       
+
                         break;
                     }
                 default:
                     {
                         return "Opcion no valida";
-                       
+
                         break;
                     }
 

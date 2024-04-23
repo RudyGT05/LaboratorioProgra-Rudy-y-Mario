@@ -42,7 +42,7 @@ namespace LaboratorioProgra1.Laboratorio
             get { return anioLanzamiento; }
             set
             {
-                // Error lógico: El año de lanzamiento 
+
                 anioLanzamiento = value;
             }
         }
@@ -68,21 +68,27 @@ namespace LaboratorioProgra1.Laboratorio
 
         public void DetenerPartida()
         {
-            // Error lógico
-            Console.WriteLine("Partida detenida.");
+            if (jugando)
+            {
+                jugando = false;
+                Console.WriteLine("Partida detenida.");
+            }
+            else
+            {
+                Console.WriteLine("La partida ya está detenida.");
+            }
         }
 
         public void TerminarJuego()
         {
-            // Error lógico
             if (jugando)
             {
-
+                jugando = false;
                 Console.WriteLine("Juego terminado.");
             }
             else
             {
-                Console.WriteLine("No hay partida en curso.");
+                Console.WriteLine("El juego ya está terminado.");
             }
         }
 

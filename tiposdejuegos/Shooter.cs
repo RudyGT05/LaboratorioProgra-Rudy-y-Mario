@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace LaboratorioProgra1.tiposdejuegos
 {
+
+
+
     internal class Shooter : VideoJuego
     {
         public bool realista { get; set; }
